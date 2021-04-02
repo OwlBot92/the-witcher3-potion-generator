@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alchemist</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Sfondo -->
+    <div class="background">
+
+        <!-- Bordo Esterno -->
+        <div class="app-border-1">
+
+            <!-- Spazio tra i bordi -->
+            <div class="between-borders">
+
+                <!-- Bordo Interno -->
+                <div class="app-border-2">
+
+                    <!-- Contenitore WebApp -->
+                    <div class="app-container">
+
+                        <!-- Logo -->
+                        <div class="container-img">
+                            <img src="img/logo.png" alt="logo">
+                        </div>
+
+                        <!-- Titolo -->
+                        <div class="titolo-container">
+                            <div class="titolo">
+                                <h1>Alchemist</h1>
+                            </div>
+                        </div>
+
+                        <!-- Contenitore Ingredienti -->
+                        <div class="ingredients-container">
+
+                            <div class="ingredients-list">
+
+                                <!-- Singolo Ingrediente -->
+                                <div class="ingredient" for="etere">
+
+                                    <img src="img/etere.png" alt="etere">
+
+                                    <h3>Etere</h3>
+
+                                    <p>L'etere, di colore viola, si trova in molti ingredienti, fra cui erbe, minerali e parti del corpo dei mostri.</p>
+
+                                    <div class="counter">
+                                        <!-- HTML Nico -->
+                                        <input type="radio" name="card" id="etere" class="radio-btn">
+                                        <div class="addRemove" id="etere-box" for="etere">
+                                            <div class="value-button dec" id="decrease-etere" value="etere" for="etere">-</div>
+                                            <input class="numberOfIngredients" type="number" id="number-etere" value="0" />
+                                            <div class="value-button inc" id="increase-etere" value="etere" for="etere">+</div>
+                                        </div>
+                                    </div>
+
+                                   
+
+                                </div>
+
+                                <!-- Singolo Ingrediente -->
+                                <div class="ingredient" for="hydragenum">
+
+                                    <img src="img/hydragenum.png" alt="hydragenum">
+
+                                    <h3>Hydragenum</h3>
+
+                                    <p>L'hydragenum, di colore argento, si trova in molti ingredieni, fra cui erbe, minerali e parti del corpo dei mostri.</p>
+
+                                    <div class="counter">
+                                        <!-- HTML Nico -->
+                                        <input type="radio" name="card" id="hydragenum" class="radio-btn">
+                                        <div class="addRemove" id="hydragenum-box" for="hydragenum">
+                                            <div class="value-button dec" id="decrease-hydragenum" value="hydragenum" for="hydragenum">-</div>
+                                            <input class="numberOfIngredients" type="number" id="number-hydragenum" value="0" />
+                                            <div class="value-button inc" id="increase-hydragenum" value="hydragenum" for="hydragenum">+</div>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                </div>
+
+                                <!-- Singolo Ingrediente -->
+                                <div class="ingredient" for="zolfo">
+
+                                    <img src="img/zolfo.png" alt="zolfo">
+
+                                    <h3>Zolfo</h3>
+
+                                    <p>Lo zolfo, di colore giallo, si trova in molti ingredienti, fra cui erbe, minerali e parti del corpo dei mostri.</p>
+
+                                    <div class="counter">
+                                        <!-- HTML Nico -->
+                                        <input type="radio" name="card" id="zolfo" class="radio-btn">
+                                        <div class="addRemove" id="zolfo-box" for="zolfo">
+                                            <div class="value-button dec" id="decrease-zolfo" value="zolfo" for="zolfo">-</div>
+                                            <input class="numberOfIngredients" type="number" id="number-zolfo" value="0" />
+                                            <div class="value-button inc" id="increase-zolfo" value="zolfo" for="zolfo">+</div>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                </div>
+
+                                <!-- Singolo Ingrediente -->
+                                <div class="ingredient" for="rebis">
+
+                                    <img src="img/rebis.png" alt="rebis">
+
+                                    <h3>Rebis</h3>
+
+                                    <p>Il rebis, di colore verde, si trova in molti ingredienti, fra cui erbe, minerali e parti del corpo dei mostri.</p>
+
+                                    <div class="counter">
+                                        <input type="radio" name="card" id="rebis" class="radio-btn">
+                                        <div class="addRemove" id="rebis-box" for="rebis">
+                                            <div class="value-button dec" id="decrease-rebis" value="rebis" for="rebis">-</div>
+                                            <input class="numberOfIngredients" type="number" id="number-rebis" value="0" />
+                                            <div class="value-button inc" id="increase-rebis" value="rebis" for="rebis">+</div>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                </div>
+
+                                <!-- Singolo Ingrediente -->
+                                <div class="ingredient" for="vermiglio">
+
+                                    <img src="img/vermiglio.png" alt="vermiglio">
+
+                                    <h3>Vermiglio</h3>
+
+                                    <p>Il vermiglio, di colore arancione, si trova in molti ingredienti, fra cui erbe, minerali e parti del corpo dei mostri.</p>
+
+                                    <div class="counter">
+                                        <input type="radio" name="card" id="vermiglio" class="radio-btn">
+                                        <div class="addRemove" id="vermiglio-box" for="vermiglio">
+                                            <div class="value-button dec" id="decrease-vermiglio" value="vermiglio" for="vermiglio">-</div>
+                                            <input class="numberOfIngredients" type="number" id="number-vermiglio" value="0" min="0" max="3" />
+                                            <div class="value-button inc" id="increase-vermiglio" value="vermiglio" for="vermiglio">+</div>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+                                <!-- Singolo Ingrediente -->
+                                <div class="ingredient" for="vetriolo">
+
+                                    <img src="img/vetriolo.png" alt="vetriolo">
+
+                                    <h3>Vetriolo</h3>
+
+                                    <p>Il vetriolo, di colore blu, si trova in molti ingredienti, fra cui erbe, minerali e parti del corpo dei mostri.</p>
+
+                                    <div class="counter">
+                                        <input type="radio" name="card" id="vetriolo" class="radio-btn">
+                                        <div class="addRemove" id="vetriolo-box" for="vetriolo">
+                                            <div class="value-button dec" id="decrease-vetriolo" value="vetriolo" for="vetriolo">-</div>
+                                            <input class="numberOfIngredients" type="number" id="number-vetriolo" value="0" />
+                                            <div class="value-button inc" id="increase-vetriolo" value="vetriolo" for="vetriolo">+</div>
+                                        </div>
+                                    </div>
+
+                                   
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Fine Contenitore Ingredienti -->
+
+                        <!-- Bottone CREA -->
+                        <div class="button-container">
+
+                            <button id="my-btn" class="my-button">
+                                CREA
+                            </button>
+
+                        </div>
+
+                    </div>
+                    <!-- Fine Contenitore WebApp -->
+                </div>
+                <!-- Fine Bordo Interno -->
+            </div>
+            <!-- Fine Spazio tra i bordi -->
+
+        </div>
+        <!-- Fine Bordo Esterno -->
+
+    </div>
+    <!-- Fine Sfondo -->
+
+    <!-- Overlay -->
+    <div id="overlay" class="hide"></div>
+
+    <!-- Finestra Modale -->
+    <div id="modal-window-border-1" class="hide">
+
+        <div class="between-borders">
+
+            <div class="app-border-2">
+
+                <div class="modal-window">
+
+                    <img src="" alt="" id="modale-img">
+
+                    <h2 id="modale-name">Hai creato <span id="modale-potion">Miele Bianco</span></h2>
+
+                    <p><span id="modale-text">Miele Bianco</span> stimola notevolmente la produzione di enzimi purificatori nei corpi mutati dei witcher. Così facendo, aiuta a rimuovere le tossine delle pozioni, annullando però al tempo stesso anche i loro effetti benefici.
+                    </p>
+
+                    <button id="cancel-btn" class="my-button" type="button" name="button">CONTINUA</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Fine Finestra Modale -->
+
+    <script src="js/script.js" charset="utf-8"></script>
+</body>
+
+</html>

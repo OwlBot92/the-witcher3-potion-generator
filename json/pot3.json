@@ -1,0 +1,84 @@
+{
+    "pozioniTreIngredienti": [
+        {
+            "nome": "rampicante",
+            "ingredienti": 3,
+            "listaIngredienti": [
+                "etere",
+                "vermiglio",
+                "zolfo"
+            ],
+            "aspetto": "img2/img-pot3/Potion_Bindweed.png"
+        },
+        {
+            "nome": "gatto",
+            "ingredienti": 3,
+            "listaIngredienti": [
+                "rebis",
+                "zolfo",
+                "zolfo"
+            ],
+            "aspetto": "img2/img-pot3/Tw3_potion_cat.png"
+        },
+        {
+            "nome": "bacio",
+            "ingredienti": 3,
+            "listaIngredienti": [
+                "vermiglio",
+                "vetriolo",
+                "vetriolo"
+            ],
+            "aspetto": "img2/img-pot3/Potion_Kiss.png"
+        },
+        {
+            "nome": "allocco",
+            "ingredienti": 3,
+            "listaIngredienti": [
+                "etere",
+                "etere",
+                "vetriolo"
+            ],
+            "aspetto": "img2/img-pot3/Tw3_potion_tawny_owl.png"
+        },
+        {
+            "nome": "gabbiano bianco",
+            "ingredienti": 3,
+            "listaIngredienti": [
+                "rebis",
+                "vetriolo",
+                "vetriolo"
+            ],
+            "aspetto": "img2/img-pot3/Tw3_white_gull.png"
+        },
+        {
+            "nome": "miele bianco",
+            "ingredienti": 3,
+            "listaIngredienti": [
+                "etere",
+                "rebis",
+                "vetriolo"
+            ],
+            "aspetto": "img2/img-pot3/Tw3_potion_white_honey.png"
+        },
+        {
+            "nome": "salice",
+            "ingredienti": 3,
+            "listaIngredienti": [
+                "etere",
+                "zolfo",
+                "zolfo"
+            ],
+            "aspetto": "img2/img-pot3/Potion_Willow.png"
+        },
+        {
+            "nome": "lacrime delle mogli",
+            "ingredienti": 3,
+            "listaIngredienti": [
+                "etere",
+                "rebis",
+                "zolfo"
+            ],
+            "aspetto": "img2/img-pot3/Potion_Wives_Tears.png"
+        }
+    ]
+}

@@ -1,0 +1,414 @@
+/* COMMON */
+body {
+    font-family: serif;
+    min-width: 300px;
+    position: relative;
+}
+
+/* SFONDO */
+.background {
+    width: 100%;
+    height: 100vh;
+    background-color: #1c1c1c;
+    background-image: url("../img/mirrored-squares.png");
+}
+
+/* BORDI */
+.app-border-1 {
+    width: 65%;
+    height: 100%;
+    background-color: rgba(103, 79, 44, 1);
+    background-image: url("../img/dark-exa.png");
+    margin: 0 auto;
+    padding: 0 4px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.between-borders {
+    width: 100%;
+    height: 100%;
+    padding: 0 2px;
+    background-color: black;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.app-border-2 {
+    width: 100%;
+    height: 100%;
+    padding: 0 4px;
+    background-color: rgba(103, 79, 44, 1);
+    background-image: url("../img/dark-exa.png");
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* CONTENT */
+.app-container {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url("../img/black-paper.png");
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-img {
+    width: 100%;
+    text-align: center;
+}
+
+.container-img img {
+    width: 320px;
+}
+
+.titolo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titolo h1 {
+    font-family: 'Cinzel', serif;
+    background: linear-gradient(180deg, rgba(207, 223, 221, 1) 20%, rgba(92, 114, 117, 1) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.07);
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 1));
+}
+
+/* INGREDIENTI */
+.ingredients-container {
+    flex-grow: 1;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.ingredients-container::-webkit-scrollbar {
+    display: none;
+}
+
+.ingredients-list {
+    width: 100%;
+    height: 100%;
+    padding: 0 15px 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ingredient {
+    width: calc(100% / 3 - 14px);
+    height: 215px;
+    float: left;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.01) 65%, rgba(0, 0, 0, 0.2) 100%);
+    text-align: center;
+    color: white;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.ingredient:nth-child(3n + 1),
+.ingredient:nth-child(3n + 2) {
+    margin-right: 20px;
+}
+
+.ingredient:nth-child(-n +3) {
+    margin-bottom: 20px;
+}
+
+
+.ingredient:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(90deg, rgba(130, 71, 5, 0.25) 0%, rgba(0, 0, 0, 0) 70%);
+    transform: scale(0.98);
+}
+
+.ingredient img {
+    width: 50px;
+    transition: transform 0.5s;
+}
+
+.ingredient:hover img {
+    transform: scale(1.3);
+}
+
+.ingredient.active img {
+    filter: drop-shadow(0 0 5px rgba(103, 79, 44, 1));
+}
+
+.ingredient h3 {
+    margin: 7px 0 0;
+}
+
+.ingredient p {
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.counter {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.remove {
+    font-size: 18px;
+}
+
+.count {
+    font-size: 16px;
+}
+
+
+
+.ingredient.active .remove:hover,
+.ingredient.active .add:hover,
+.ingredient.active .count,
+.ingredient.active h3 {
+    color: #aa6f19;
+}
+
+/* BOTTONE CREA */
+.button-container {
+    width: 100%;
+    text-align: center;
+}
+
+.my-button {
+    margin: 0 auto;
+    background-color: rgba(46, 30, 14, 0.2);
+    background-image: url("../img/mirrored-squares.png");
+    background-size: 50px;
+    color: rgb(200, 200, 200);
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 30px;
+    font-size: 23px;
+    font-weight: bold;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    filter: blur(0.2px);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.my-button:hover {
+    background-color: rgba(46, 30, 14, 0.8);
+    color: white;
+}
+
+.my-button:active {
+    transform: scale(0.98);
+}
+
+.my-button:focus {
+    outline: 0;
+}
+
+/* OVERLAY */
+#overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* FINESTRA MODALE */
+#modal-window-border-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 475px;
+    height: 350px;
+    background-color: rgba(103, 79, 44, 1);
+    background-image: url("../img/dark-exa.png");
+    margin: 0 auto;
+    padding: 0 4px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 100px 80px rgba(0, 0, 0, 1);
+}
+
+.hide {
+    display: none;
+}
+
+.modal-window {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url("../img/black-paper.png");
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+#potion {
+    color: #a88757;
+}
+
+.modal-window img {
+    width: 85px;
+    filter: drop-shadow(0 0 5px rgba(103, 79, 44, 1));
+    margin-top: 8px;
+}
+
+.modal-window h2 {
+    padding-top: 5px;
+}
+
+.modal-window p {
+    text-align: center;
+}
+
+
+/* ----- CSS NICO ----- */
+input[type="number"]{
+    width: 15px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.addRemove{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50px;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+}
+.radio-btn{
+    display: none;
+}
+.value-button{
+    cursor: pointer;
+}
+
+/* rimozione freccette negli input */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+/* Firefox */
+input[type=number] {
+-moz-appearance: textfield;
+}
+
+/* ----- FINE CSS NICO ----- */
+
+
+
+/* RESPONSIVE SECTION */
+@media all and (max-width: 1369px) {
+    .ingredient {
+        width: calc(100% / 2 - 10px);
+    }
+
+    .ingredient:nth-child(3n + 1),
+    .ingredient:nth-child(3n + 2) {
+        margin-right: 0;
+    }
+
+    .ingredient:nth-child(2n+1) {
+        margin-right: 20px;
+    }
+}
+
+@media all and (max-width: 967px) {
+    .app-border-1 {
+        width: 80%
+    }
+
+    .ingredient {
+        height: auto;
+    }
+
+    .counter {
+        bottom: 7px;
+    }
+
+    #modal-window-border-1 {
+        width: 60%;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .ingredient {
+        width: calc(100% / 2 - 10px);
+    }
+
+    #modal-window-border-1 {
+        height: auto;
+    }
+
+    .modal-window h2 {
+        font-size: 29px;
+    }
+}
+
+@media all and (max-width: 575px) {
+    .app-border-1 {
+        width: 100%;
+    }
+
+    .container-img img {
+        width: 220px;
+    }
+
+    .titolo h1 {
+        font-size: 33px;
+    }
+
+    .ingredients-list {
+        height: 68vh;
+    }
+
+    .ingredient {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #my-btn {
+        margin: 0;
+    }
+
+    #modal-window-border-1 {
+        width: 100%;
+        min-width: 300px;
+    }
+
+    .modal-window h2 {
+        font-size: 24px;
+    }
+}
